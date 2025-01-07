@@ -96,6 +96,10 @@ namespace chuni_hands {
                     ChuniIO.Send(_sensors);
                     break;
                 }
+                case "keys": {
+                    Keys.Send(_sensors);
+                    break;
+                }
                 default:
                     throw new Exception("unknown SendKeyMode");
             }
