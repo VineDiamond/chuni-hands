@@ -92,6 +92,7 @@
     <Compile Include="ChuniIO.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Helpers.cs" />
+    <Compile Include="Keysdi.cs" />
     <Compile Include="Keys.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Sensor.cs" />
@@ -140,6 +141,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Interceptor\Interceptor\Interceptor.csproj">
+      <Project>{c451a00e-77f1-4f3f-b7ee-27dc712ea316}</Project>
+      <Name>Interceptor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CameraHelper\CameraHelper.vcxproj">
       <Project>{720d3af0-6a71-422b-8a93-1deece9e330f}</Project>
       <Name>CameraHelper</Name>

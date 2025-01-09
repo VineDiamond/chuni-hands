@@ -19,9 +19,10 @@ namespace chuni_hands {
         public int CaptureHeight { get; set; } = 480;
         public int Fps { get; set; } = 60;
         public bool LogDiff { get; set; }
-        public string SendKeyMode { get; set; } = "chuni_io";
+        public string SendKeyMode { get; set; } = "keys";
         public string EndPoint { get; set; } = "http://10.233.3.22:4420/update_air";
         public bool ShowVideo { get; set; } = true;
+        public string DirectInputNote { get; set; } = "Only works when SendKeyMode is set to 'keysdi'. Requires Interception to work. https://github.com/oblitum/Interception/releases/latest";
 
         [JsonIgnore]
         public bool FreezeVideo { get; set; }

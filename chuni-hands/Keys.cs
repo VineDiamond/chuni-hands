@@ -7,8 +7,6 @@ namespace chuni_hands {
         [DllImport("user32.dll", SetLastError = true)]
         static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
         public const byte KeyUp = 0x02;
-        public const byte Key = 0x4F;
-
 
         public static void Send(IList<Sensor> sensors) {
             for (var i = 0; i < 6; ++i) {

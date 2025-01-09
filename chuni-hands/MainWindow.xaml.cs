@@ -99,7 +99,11 @@ namespace chuni_hands {
                 case "keys": {
                     Keys.Send(_sensors);
                     break;
-                }
+                    }
+                case "keysdi": {
+                    Keysdi.Send(_sensors);
+                    break;
+                    }
                 default:
                     throw new Exception("unknown SendKeyMode");
             }
