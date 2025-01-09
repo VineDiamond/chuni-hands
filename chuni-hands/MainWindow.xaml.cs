@@ -97,11 +97,8 @@ namespace chuni_hands {
                     break;
                 }
                 case "keys": {
-                    Keys.Send(_sensors);
-                    break;
-                    }
-                case "keysdi": {
-                    Keysdi.Send(_sensors);
+                    if (_config.DirectInput) { Keysdi.Send(_sensors); }
+                    else { Keys.Send(_sensors); }
                     break;
                     }
                 default:
