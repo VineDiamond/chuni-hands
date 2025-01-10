@@ -23,7 +23,7 @@ namespace chuni_hands {
         public string EndPoint { get; set; } = "http://10.233.3.22:4420/update_air";
         public bool ShowVideo { get; set; } = true;
         public bool DirectInput { get; set; } = false;
-        public string DirectInputNote { get; set; } = "Only works when SendKeyMode is set to 'keysdi'. Requires Interception to work. https://github.com/oblitum/Interception/releases/latest";
+        public string DirectInputNote { get; set; } = "Only works when SendKeyMode is set to 'keys'. Requires Interception to work. https://github.com/oblitum/Interception/releases/latest";
 
         [JsonIgnore]
         public bool FreezeVideo { get; set; }
